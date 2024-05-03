@@ -7,6 +7,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <script src='main.js'></script>
+    <script src="https://kit.fontawesome.com/081c2322c8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -14,15 +15,210 @@
         <div class="container">
             <nav>
                 <img src="images/logo.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">About</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">My Works</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">About</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
+            <div class="header-text">
+                <!-- <p>Data Science Enthusiast</p> -->
+                <h1>Hi, I'm <span>Ujjwol</span> Poudel</h1>
+            </div>
         </div>
     </div>
+
+    <!-- ---------about--------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat rerum ea id alias perspiciatis error molestiae ut officia ipsa dolorem.
+                    Sunt ut soluta doloremque tenetur labore! Perferendis beatae natus dolor porro, suscipit omnis corporis nesciunt saepe culpa ex rerum molestias.
+                    Magnam fugit enim nihil explicabo. Praesentium natus iusto veritatis necessitatibus veniam! Ab minus omnis beatae eaque pariatur tempore hic consequuntur.
+                    Voluptatum praesentium eaque cum, quo est nisi delectus? Omnis praesentium dolorem consectetur aperiam similique. Numquam excepturi repellendus quaerat deserunt in.
+                    Iusto dicta modi vitae recusandae explicabo quam unde facere ipsa minus assumenda, nihil suscipit necessitatibus repudiandae, blanditiis eius eligendi tempora.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Data Science</span><br>Design and Implement Machine Learning models</li>
+                            <li><span>Web Development</span><br>Website Design</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Current</span><br>Internship</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>Bachelor of Engineering in Electronics, Communication and Information Enginerring</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------services--------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-atom"></i>
+                    <h2>ANN</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corrupti adipisci amet eum a fugit minus laboriosam nemo,
+                     consequatur consectetur. Atque, nam quas quia nostrum quidem reprehenderit aliquid nulla sint.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>kNN</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corrupti adipisci amet eum a fugit minus laboriosam nemo,
+                     consequatur consectetur. Atque, nam quas quia nostrum quidem reprehenderit aliquid nulla sint.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-landmark"></i>
+                    <h2>Naive-Bayes Classifier</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corrupti adipisci amet eum a fugit minus laboriosam nemo,
+                     consequatur consectetur. Atque, nam quas quia nostrum quidem reprehenderit aliquid nulla sint.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------portfolio--------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Recent Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Artificical Neural Network</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quam quas, delectus fugiat dicta eius velit? Odio ex 
+                        reiciendis maxime impedit illum at aut, provident, molestias suscipit amet, modi cum.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>k Nearest Neighbour</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quam quas, delectus fugiat dicta eius velit? Odio ex 
+                        reiciendis maxime impedit illum at aut, provident, molestias suscipit amet, modi cum.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Naive-Bayes Classifier</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quam quas, delectus fugiat dicta eius velit? Odio ex 
+                        reiciendis maxime impedit illum at aut, provident, molestias suscipit amet, modi cum.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ---------contact--------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>contact@ujjwolpoudel.com.np</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/ujjwol-poudel-ab74aa283/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/ujjwol.poudel.12"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/ujjwol_poudel/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://twitter.com/ujjwol_12"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    </div>
+                    <a href="images/ujjwol-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Ujjwol</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxY7U2Oaqlt8ZYYwbYmucgucuY-lu9glDwr9EnPh5EJPR4aYTfXbN-WIEWYQVaS2c0/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg= document.getElementById("msg")
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                }, 2000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
 </body>
 </html>
